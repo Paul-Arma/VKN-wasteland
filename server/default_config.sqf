@@ -12,11 +12,11 @@ A3W_uavControl = "group";          // Restrict connection to UAVs based on owner
 // Time settings
 A3W_startHour = 5;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
 A3W_timeMultiplierDay = 6.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
-A3W_timeMultiplierNight = 24;     // Sets the speed of time between 8 PM and 5 AM
+A3W_timeMultiplierNight = 26;     // Sets the speed of time between 8 PM and 5 AM
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
 
 // Player settings
-A3W_startingMoney = 3500;           // Amount of money that players start with
+A3W_startingMoney = 500;           // Amount of money that players start with
 A3W_survivalSystem = 1;            // Food and water are required to stay alive (0 = no, 1 = yes) - 0 removes food and water items from the mission
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 180;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds)
@@ -128,9 +128,9 @@ A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from missi
 A3W_missionsQuantity = 6;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 0;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
-A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
+A3W_mainMissionDelay = 5*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
-A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
+A3W_sideMissionDelay = 2*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
+A3W_moneyMissionDelay = 10*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
