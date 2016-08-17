@@ -26,6 +26,6 @@ _rscLayer cutRsc["osefStatusBar","PLAIN"];
 		_minutes = (_time - (_hours * 60));
 	
 		
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["VINKING.COM | PLAYERS ALIVE: %2 | AVERAGE FPS: %1", round diag_fps, count playableUnits];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["VIKING.COM | PLAYERS ALIVE: %2 | AVERAGE FPS: %1", round diag_fps, count playableUnits];
 	}; 
 };
