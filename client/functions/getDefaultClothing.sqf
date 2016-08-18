@@ -6,7 +6,7 @@
 //	@file Author: AgentRev
 //	@file Created: 22/12/2013 22:04
 
-private ["_unit", "_item", "_side", "_isSniper", "_isDiver", "_defaultVest", "_result"];
+private ["_unit", "_item", "_side", "_isSniper", "_isDiver", "_defaultVest", "_result", "_defaultUniform"];
 
 _unit = _this select 0;
 _item = _this select 1;
@@ -25,6 +25,7 @@ _isSniper = (["_sniper_", _unit] call fn_findString != -1);
 _isDiver = (["_diver_", _unit] call fn_findString != -1);
 
 _defaultVest = "V_Rangemaster_Belt";
+_defaultUniform = "U_BG_Guerilla2_1";
 
 _result = "";
 
@@ -36,17 +37,17 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			case (_isDiver):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
@@ -58,17 +59,17 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			case (_isDiver):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = "_defaultVest" };
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
@@ -80,17 +81,17 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			case (_isDiver):
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
-				if (_item == "vest") then { _result = "_defaultVest" };
+				if (_item == "uniform") then { _result = _defaultUniform };
+				if (_item == "vest") then { _result = _defaultVest };
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_BG_Guerilla2_1"; };
+				if (_item == "uniform") then { _result = _defaultUniform };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
