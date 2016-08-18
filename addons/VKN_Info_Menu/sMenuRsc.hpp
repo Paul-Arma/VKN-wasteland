@@ -16,9 +16,9 @@ class SC_sMenuConfig
 		keyToOpenMenu = 0x43; // Change to false to disable. Works with useScrollAction. DEFAULT: 0x43 = F9 key. https://community.bistudio.com/wiki/DIK_KeyCodes
 		useScrollAction = 1; // Change to false to disable. Can use any number to enable. Can be used in combo with keyToOpenMenu
 		menuCategories[] = {"General","Rules","Donator"}; // Try to keep amount as low as possible for optimal speed/load
-		serverIPandPort = "XX.XX.XXX.XXX:2302"; // Speaks for itself
+		serverIPandPort = "5.9.98.18:2702"; // Speaks for itself
 		serverLocation = "Germany"; // Location of your server. Keep as short as possible
-		maxPlayers = 60; // This should be exactly the same as the maximum slot count of your server
+		maxPlayers = 40; // This should be exactly the same as the maximum slot count of your server
 		restartInterval = 5; // Number of hours your server will be online before it automatically restarts. Set to 0 if you use a restart schedule.
 		serverMods = "A3Wasteland Boosted"; // Put whatever mods you want to show here
 		serverAllowedMods = "<a href='http://a3wasteland.com/'>Wasteland Official</a>"; // This example shows how to make a clickable text
@@ -51,12 +51,12 @@ class SC_sMenuConfig
  		{
 			title = "GENERAL";
 			contentArray[] = {"txtOne","txtTwo","txtThree","txtFour","txtFive","txtSix","txtSeven"};
-			txtOne = "<t size='1.5'><a href='url' color='#D13B3B'>Language English</a></t><br />";
-			txtTwo = "<t size='1.5'>VIKING private military company</t> <br /><br /> <img image='mapConfig\Loading.jpg' size='7' /> <br /><br />";
-			txtThree = "<t size='1.5'>VIKING Presents:</t> <br /> - Variety of custom missions <br /> - Bank limit is : 5 000 000 <br /> - Airdrop anywhere on the map <br /> - Base building <br /> - Optimised performance <br /> - <a href='url' color='#298A08'>Donator menu</a> <br /><br />";
+			txtOne = "<t size='1.5'><a href='url' color='#0e03f9'>General</a></t><br />";
+			txtTwo = "<t size='1.5'>VIKING PMC</t> <br /><br /> <img image='mapConfig\Loading.jpg' size='7' /> <br /><br />";
+			txtThree = "<t size='1.5'>VIKING Presents:</t> <br /> - Variety of custom missions <br /> - Bank limit of : 5 000 000 <br /> - Airdrop anywhere on the map <br /> - Base building <br /> - Optimised performance <br /> - <a href='url' color='#298A08'>Donator menu</a> <br /><br />";
 			txtFour = "<t size='1.5'>Visit us at</t> <br /><a href='http://vikingpmc.com' color='#D13B3B'>vikingpmc.com</a> <br /><br />";
-			txtFive = "<t size='1.5'>Teamspeak</t><br /> We also provide a free teamspeak server see our website for the adress <a href='vikingpmc.com' color D13B3B'>vikingpmc.com</a> <br /><br />";
-			txtSix =  "<t size='1.5'>Nos Serveurs</t><br />Cliquer ici pour voir la liste de nos serveurs<br /><a href='http://www.gametracker.com/clan/frenchteamgaming/' color='#D13B3B'>Gametracker</a> <br /><br />";
+			txtFive = "<t size='1.5'>Teamspeak</t><br /> We also provide a free teamspeak server see our website for the adress or join: tsgb1.vilayer.com:10074 directly <a href='vikingpmc.com' color D13B3B'>vikingpmc.com</a> <br /><br />";
+			txtSix =  "<t size='1.5'>Ideas and feedback</t><br />If you have any ideas or feedback for our server go to<br /><a href='http://vikingpmc.com/contact.html/' color='#D13B3B'>VIKING CONTACT</a> <br /><br />";
 			txtSeven = "<t size='1.5'>Our server admins</t><br /> - Wardaddy [Admin] <br /> -General [Admin] <br /> - Havok [Admin] <br /> - Bullets4yu [Admin] <br /> - Deputy Dawg [Admin] <br /> - Dothehump [Admin]";
 		};
 		
@@ -64,22 +64,22 @@ class SC_sMenuConfig
 		{
 			title = "THE RULES";
 			contentArray[] = {"txtOne","txtTwo","txtThree","txtFour","txtFive","txtSix"};
-			txtOne = "<t size='1.5'><a href='url' color='#D13B3B'>Language Français</a></t><br />";
-			txtTwo = "<t size='1.5'>Règle #1</t> <br /> - Pas de racismes/profanation/insultes <br />  <t size='0.75' color='#c2c2c2'>En ne respectant pas ces règles, vous encourez des sanctions de type: banissement et exlusions (temporaire et/ou définitive).</t> <br /><br />";
-			txtThree = "<t size='1.5'>Règle #2</t> <br /> - Teamkill strictement interdit ou troll <br /> <t size='0.75' color='#c2c2c2'>En ne respectant pas ces règles, vous encourez des sanctions de type: banissement et exlusions (temporaire et/ou définitive).</t> <br /><br />";
-			txtFour = "<t size='1.5'>Règle #3</t> <br /> - Respecter les joueurs et admins <br /> <t size='0.75' color='#c2c2c2'>En ne respectant pas ces règles, vous encourez des sanctions de type: banissement et exlusions (temporaire et/ou définitive).</t> <br /><br />";
-			txtFive = "<t size='1.5'>Règle #4</t> <br /> - Ne pas cheat, glitch ou exploiter des bugs <br /> <t size='0.75' color='#c2c2c2'>En ne respectant pas ces règles, vous encourez des sanctions de type: banissement et exlusions (temporaire et/ou définitive).</t> <br /><br />";
-			txtSix = "<t size='1.5'>Règle #5</t> <br /> - Aucune possibilité de dire : je n'est pas lu les règles.<br /> <t size='0.75' color='#c2c2c2'>Ceci est non acceptable.</t> <br /><br />";
+			txtOne = "<t size='1.5'><a href='url' color='#0e03f9'>The rules we maintain:</a></t><br />";
+			txtTwo = "<t size='1.5'>Rule one</t> <br /> - Be nice to your fellow players <br />  <t size='0.75' color='#c2c2c2'>If your behaviour is not accroding our rules you can be banned from our servers!.</t> <br /><br />";
+			txtThree = "<t size='1.5'>Rule two</t> <br /> - No trolling or teamkilling <br /> <t size='0.75' color='#c2c2c2'>We understand that sometimes bugs need fixen by shooting youre mate in the face, and thats ok but trolling and killing your team mates for no good reason is not what we want on our servers..</t> <br /><br />";
+			txtFour = "<t size='1.5'>Rule three</t> <br /> - Respect all members of VIKING PMC<br /> <t size='0.75' color='#c2c2c2'>Our admins might be strict but always fair, if they made a mistake or you dont agree with the decisions of the admin, use the contact form on our website..</t> <br /><br />";
+			txtFive = "<t size='1.5'>Rule 4</t> <br /> - Hacking, bugs, exploits <br /> <t size='0.75' color='#c2c2c2'>Our server is protected by anit-cheat, chaught abusing bugs or exploits can get you banned..</t> <br /><br />";
+			txtSix = "<t size='1.5'>Rule 5</t> <br /> - Use common sense and keep it fun for everyone.<br /> <t size='0.75' color='#c2c2c2'>Thank you</t> <br /><br />";
 		};
 		class 3 // Third in _menuCategories
 		{
-			title = "SUPPORT SERVER";
+			title = "Donations and VIP";
 			contentArray[] = {"txtOne","txtTwo","txtThree","txtFour","txtFive"};
-			txtOne = "<t size='1.5'><a href='url' color='#D13B3B'>Language Français</a></t><br />";
-			txtTwo = "<t size='1.5'>Faites un don</t> <br />Si vous aimez jouer sur notre serveur et qu'il vous plaît, vous pouvez faire un don pour nous soutenir et participer au coûts du serveur !<br /><br />";
-			txtThree = "<t size='1.5'><a href='url' color='#298A08'>Menu Donateur + Slots Réservés</a></t> <br /><br /> <img image='addons\FTG_Infos_Menu\menuLogos\vip.jpg' size='7' /> <br /><br />";
-			txtFour = "<t size='1.5'>Devenir Donateur</t> <br />Veuillez vous rendre sur le <a href='url' color='#D13B3B'>Teamspeak</a> : FrenchTeamGaming.fr<br /><br />";
-			txtFive = "<a href='http://frenchteamgaming.com/donation/' color='#D13B3B'>Cliquez ici pour faire un don</a> <br /><br />";
+			txtOne = "<t size='1.5'><a href='url' color='#0e03f9'>Dontations, VIP loadout and reserved slots.</a></t><br />";
+			txtTwo = "<t size='1.5'>Support us</t> <br />Servers aint cheap, but donating to VIKING can get you some nice perks in return for your donation! see our website for all the perks! !<br /><br />";
+			txtThree = "<t size='1.5'><a href='url' color='#298A08'>VIP loadouts and reserved slots</a></t> <br /><br /> <img image='addons\VKN_Info_Menu\menuLogos\vip.jpg' size='7' /> <br /><br />";
+			txtFour = "<t size='1.5'>Become a dontator and purchase perks</t> <br />Visit our wasteland and dontation page here:<a href='url' color='#D13B3B'>Donation page</a> : http://vikingpmc.com/wasteland.php<br /><br />";
+			txtFive = "<a href='http://vikingpmc.com/wasteland.php' color='#D13B3B'>Donation page</a> <br /><br />";
 		};
 	};
 };
