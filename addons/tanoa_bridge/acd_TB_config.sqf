@@ -8,7 +8,7 @@ acd_debug = true; /* ACiDy Debug for some scripts */
 /*#######################################################################################################################################
  WEST BRIDGE
 #######################################################################################################################################*/
-acd_TB_WEST_BRIDGE_enabled = true;
+acd_TB_WEST_BRIDGE_enabled = false;
 /*#####################################################################################################################################*/
 	acd_TB_WEST_BRIDGE_DO_remove = true; /* Remove/hide trees and objects */
 	acd_TB_WEST_BRIDGE_extra_objects = true; /* Build extra objects */
@@ -25,7 +25,7 @@ acd_TB_WEST_BRIDGE_enabled = true;
 /*#######################################################################################################################################
  SOUTH BRIDGE
 #######################################################################################################################################*/
-acd_TB_SOUTH_BRIDGE_enabled = true; /* SOUTH Main Bridge */
+acd_TB_SOUTH_BRIDGE_enabled = false; /* SOUTH Main Bridge */
 /*#####################################################################################################################################*/
 	acd_TB_SOUTH_BRIDGE_DO_remove = true; /* Remove/hide trees ad objects */
 	acd_TB_SOUTH_BRIDGE_extra_objects = true; /* Build extra objects */
