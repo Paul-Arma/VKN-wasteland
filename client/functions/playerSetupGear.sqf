@@ -32,21 +32,21 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 
 // Add NVG
 
-_player addBackpack "B_Kitbag_mcamo";
-_player addItemtoBackpack "NVGoggles";
-_player addMagazine "30Rnd_556x45_Stanag";
-_player addWeapon "arifle_Mk20C_F";
-_player addPrimaryWeaponItem "optic_aco_smg";
-_player addMagazine "30Rnd_556x45_Stanag";
+_player addUniform "U_BG_Guerilla2_1";
+_player addMagazine "30Rnd_9x21_Mag_SMG_02";
+_player addWeapon "SMG_02_F";
+_player addPrimaryWeaponItem "acc_flashlight";
+_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 _player addItem "HandGrenade";
 _player addItem "SmokeShell";
 _player addItem "FirstAidKit";
-_player selectWeapon "arifle_Mk20C_F";
+_player selectWeapon "SMG_02_F";
 
 switch (true) do
 {
 	case (["_medic_", typeOf _player] call fn_findString != -1):
 	{
+		_player addBackpack "B_Kitbag_mcamo";
 		_player removeItem "FirstAidKit";
 		_player addItem "SmokeShell";
 		_player addItem "Medikit";
@@ -57,10 +57,10 @@ switch (true) do
 		_player removeMagazine "30Rnd_556x45_Stanag";
 		_player removeMagazine "30Rnd_556x45_Stanag";
 		_player removeMagazine "30Rnd_556x45_Stanag";
-		_player addMagazine "30Rnd_65x39_caseless_mag";
-		_player addWeapon "arifle_MX_SW_F";
-		_player addPrimaryWeaponItem "optic_Aco_grn";
-		_player addMagazine "30Rnd_65x39_caseless_mag";
+		_player addMagazine "30Rnd_9x21_Mag_SMG_02";
+		_player addWeapon "SMG_02_F";
+		_player addPrimaryWeaponItem "acc_flashlight";
+		_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 		_player addItem "MiniGrenade";
 		_player addItem "MineDetector";
 		_player addItem "Toolkit";
