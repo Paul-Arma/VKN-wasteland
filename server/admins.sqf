@@ -30,8 +30,12 @@ highAdmins =
 // Server Owners: access to everything, including god mode, money, guns, and vehicles
 serverOwners = 
 [
-		"76561197996326460",
-		"76561198068539881"
+		"76561197996326460", // Havok
+		"76561198068539881", // Bullets4yu
+		"76561197961489650", // General
+		"76561198044162606", // Wardaddy
+		"76561198043139108", // Liam
+		"76561198060784160"  // Dothehump
 ];
 
 if (typeName lowAdmins == "ARRAY") then { lowAdmins = compileFinal str lowAdmins };
