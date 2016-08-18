@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2717.8879,87.956329,7305.6924};
-		dir[]={0.90794945,-0.38250041,0.17149045};
-		up[]={0.37586325,0.92395526,0.07099244};
-		aside[]={0.18560217,4.6922651e-007,-0.98267907};
+		pos[]={2173.0635,79.004639,7500.2759};
+		dir[]={-0.15708198,-0.28896925,-0.94442725};
+		up[]={-0.047414947,0.95733404,-0.28507638};
+		aside[]={-0.98652071,1.8450373e-007,0.16408543};
 	};
 };
 binarizationWanted=0;
@@ -120,6 +120,247 @@ randomSeed=3333663;
 class ScenarioData
 {
 	author="AgentRev";
+	disabledAI=1;
+	respawn=3;
+	class Header
+	{
+		gameType="Survive";
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ReviveRequiredTrait";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ReviveRequiredItemsFakConsumed";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="ReviveMedicSpeedMultiplier";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=2;
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="ReviveForceRespawnDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=3;
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="ReviveBleedOutDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=20;
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="ReviveDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=6;
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="ReviveUnconsciousStateMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="ReviveRequiredItems";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=12;
+	};
 };
 class Mission
 {
@@ -17911,7 +18152,7 @@ class Mission
 						angles[]={0,3.5270867,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -17919,14 +18160,12 @@ class Mission
 					};
 					id=185;
 					type="C_man_1_1_F";
-					atlOffset=0.51183748;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=184;
-			atlOffset=0.51183748;
 		};
 		class Item40
 		{
@@ -17983,14 +18222,12 @@ class Mission
 					};
 					id=189;
 					type="C_man_1_1_F";
-					atlOffset=0.15400529;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=188;
-			atlOffset=0.15400529;
 		};
 		class Item42
 		{
@@ -18016,14 +18253,12 @@ class Mission
 					};
 					id=191;
 					type="C_man_1_1_F";
-					atlOffset=0.2036581;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=190;
-			atlOffset=0.2036581;
 		};
 		class Item43
 		{
@@ -19182,7 +19417,7 @@ class Mission
 			type="Empty";
 			colorName="ColorWhite";
 			id=298;
-			atlOffset=23.83436;
+			atlOffset=22.424208;
 		};
 		class Item140
 		{
@@ -19223,7 +19458,6 @@ class Mission
 			colorName="ColorGUER";
 			angle=16.790106;
 			id=302;
-			atlOffset=0.079471588;
 		};
 		class Item144
 		{
@@ -27311,7 +27545,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.24162;
+			angle=224.24155;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -36109,7 +36343,7 @@ class Mission
 			};
 			id=1574;
 			type="Land_AirstripPlatform_01_F";
-			atlOffset=-2.5899999;
+			atlOffset=-2.5900002;
 		};
 		class Item1209
 		{
@@ -36761,7 +36995,7 @@ class Mission
 			};
 			id=1635;
 			type="Land_CrashBarrier_01_8m_F";
-			atlOffset=20.356544;
+			atlOffset=20.356506;
 		};
 		class Item1248
 		{
@@ -37479,7 +37713,7 @@ class Mission
 			};
 			id=1678;
 			type="Land_CrashBarrier_01_8m_F";
-			atlOffset=26.898254;
+			atlOffset=26.898277;
 		};
 		class Item1291
 		{
@@ -37700,7 +37934,7 @@ class Mission
 			};
 			id=1691;
 			type="Land_CrashBarrier_01_8m_F";
-			atlOffset=35.646866;
+			atlOffset=35.646942;
 		};
 		class Item1304
 		{
@@ -37868,7 +38102,7 @@ class Mission
 			};
 			id=1701;
 			type="Land_AirstripPlatform_01_F";
-			atlOffset=43.707115;
+			atlOffset=43.706314;
 		};
 		class Item1314
 		{
@@ -38480,7 +38714,7 @@ class Mission
 			};
 			id=1738;
 			type="Land_CrashBarrier_01_8m_F";
-			atlOffset=0.0060539246;
+			atlOffset=0.0059738159;
 		};
 		class Item1351
 		{
@@ -39430,7 +39664,7 @@ class Mission
 			};
 			id=1794;
 			type="Land_AirstripPlatform_01_F";
-			atlOffset=25.909575;
+			atlOffset=25.909634;
 		};
 		class Item1407
 		{
@@ -39613,7 +39847,7 @@ class Mission
 			};
 			id=1808;
 			type="Land_AirstripPlatform_01_F";
-			atlOffset=0.29158545;
+			atlOffset=0.29158592;
 		};
 		class Item1418
 		{
