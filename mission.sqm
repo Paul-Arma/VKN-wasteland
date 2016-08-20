@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1996;
+		nextID=2002;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2941.6394,24.041059,7275.5991};
-		dir[]={0.066206835,-0.39376858,0.91682357};
-		up[]={0.028361514,0.91920853,0.3927466};
-		aside[]={0.99740273,6.5410859e-009,-0.072025746};
+		pos[]={2951.0942,147.58676,8009.5176};
+		dir[]={-0.59561867,-0.29717109,0.74630129};
+		up[]={-0.18542987,0.95479327,0.23234026};
+		aside[]={0.78160888,1.0973599e-006,0.62380129};
 	};
 };
 binarizationWanted=0;
@@ -44,13 +44,14 @@ addons[]=
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Structures_F_Naval_Buoys",
 	"A3_Structures_F_Exp_Infrastructure_Airports",
-	"A3_Structures_F_Exp_Walls_Crashbarriers"
+	"A3_Structures_F_Exp_Walls_Crashbarriers",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -111,6 +112,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -385,7 +393,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1493;
+		items=1497;
 		class Item0
 		{
 			dataType="Group";
@@ -19458,7 +19466,6 @@ class Mission
 			colorName="ColorGUER";
 			angle=16.790106;
 			id=302;
-			atlOffset=0.079471588;
 		};
 		class Item144
 		{
@@ -27546,7 +27553,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.24152;
+			angle=224.24142;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -40392,7 +40399,7 @@ class Mission
 			};
 			id=1939;
 			type="Land_AirstripPlatform_01_F";
-			atlOffset=8.4034634;
+			atlOffset=8.4034901;
 		};
 		class Item1446
 		{
@@ -41180,6 +41187,51 @@ class Mission
 			angle=99.479996;
 			id=1994;
 			atlOffset=26.483307;
+		};
+		class Item1493
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5021.9692,1.5956495,11541.116};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],15])";
+			id=1998;
+			type="Logic";
+		};
+		class Item1494
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4178.6572,4.5223045,8335.3506};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],15])";
+			id=1999;
+			type="Logic";
+		};
+		class Item1495
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4097.4409,3.4084997,8270.5576};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],15])";
+			id=2000;
+			type="Logic";
+		};
+		class Item1496
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4215.7808,3.9674125,8373.0088};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],5])";
+			id=2001;
+			type="Logic";
+			atlOffset=2.3841858e-007;
 		};
 	};
 };
